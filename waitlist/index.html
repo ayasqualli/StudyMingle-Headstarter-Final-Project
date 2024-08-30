@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudyMingle Waitlist</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
+    <style>
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            background-color: #FFF9E6; /* Pastel yellow background */
+            color: #FF6F3C; /* Pastel orange text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .body-wrap {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .site-header {
+            background-color: #ffbd59; /* Light pastel yellow */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 40px;
+            display: flex; /* Use flexbox for alignment */
+            align-items: center;
+            justify-content: center /* Vertically align logo and text */
+        }
+
+        .header-brand {
+            margin-right: 20px; /* Add spacing between logo and text */
+        }
+
+        .header-brand img { /* Style the logo */
+            max-height: 80px; /* Adjust max height as needed */
+        }
+
+        .header-brand h1 a {
+            color: #FF6F3C; /* Pastel orange */
+            text-decoration: none;
+            font-size: 2.5rem;
+        }
+
+        .hero {
+            padding: 40px 20px;
+            background-color: #FFF2D9; /* Softer pastel yellow */
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 40px;
+        }
+
+        /* Widget container styling */
+        #getWaitlistContainer {
+            background-color: #FFEDC1; /* Light pastel yellow */
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            color: #FF6F3C; /* Pastel orange text */
+        }
+
+        .site-footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+
+        .footer-social-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-social-links a {
+            color: #FF6F3C; /* Pastel orange */
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-social-links a:hover {
+            color: #FF8F60; /* Slightly darker orange */
+        }
+
+        .footer-copyright {
+            color: #FF6F3C; /* Pastel orange */
+        }
+    </style>
+</head>
+<body>
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="header-brand">
+                <img src="/logo.png" alt="StudyMingle Logo"> 
+            </div>
+            <div class="brand header-brand center">
+                <h1 class="m-0">
+                    <a href="#">StudyMingle</a>
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1 class="hero-title">Join the StudyMingle Waitlist!</h1>
+                <p class="hero-paragraph">Be the first to find your perfect study partner.</p>
+                <!-- GetWaitlist widget -->
+                <div id="getWaitlistContainer" data-waitlist_id="19899" data-widget_type="WIDGET_2"></div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <a href="https://www.instagram.com/study_mingle/">Instagram</a></li>
+            <div class="footer-copyright">&copy; 2024 StudyMingle, all rights reserved</div>
+        </footer>
+    </div>
+
+    <!-- GetWaitlist widget script -->
+    <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
+</body>
+</html>
