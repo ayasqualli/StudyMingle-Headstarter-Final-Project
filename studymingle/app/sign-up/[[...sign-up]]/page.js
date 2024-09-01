@@ -6,49 +6,48 @@ import { SignUp, useAuth } from "@clerk/nextjs";
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function SignUpPage() {
+export default function SignInPage() {
   const { isSignedIn } = useAuth();
   const router = useRouter();
 
-  //Redirection to chat after signup
   useEffect(() => {
     console.log("isSignedIn:", isSignedIn);
     if (isSignedIn === true) {
-      router.push('/chat'); // Redirect to the chat page after successful sign-in
+      router.push('/dashboard'); // Redirect to the chat page after successful sign-in
     }
-  }, [isSignedIn]); // Only run when isSignedIn changes (dependency change)
+  }, [isSignedIn, router]); // Only run when isSignedIn changes
 
   return (
-    <>
+    <Box
+      style={{
+        display: "flex",
+        minHeight: "100vh",
+        minWidth: "100vw",
+      }}
+    >
       <Box
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          minHeight: "100vh",
-          minWidth: "100vw", // Ensures the background covers the full width
-          position: "absolute", // Makes sure it spans the entire viewport
-          top: 0,
-          left: 0,
-          backgroundImage: 'url("/bg2.jpg")',
+          width:"80%", // Takes up the remaining space
+          backgroundImage: 'url("/register-login.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
+      />
+      <Box
+        style={{
+          width: "580px", // Set a fixed width for the form container
+          background: "#ffcd93",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "20px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Optional shadow for better visibility
+          borderRadius: "8px",
+        }}
       >
-        <Container
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: "20px",
-            background: "rgba(255, 255, 255, 0.1)", // Optional overlay for readability
-            borderRadius: "8px",
-          }}
-        >
-          <SignUp />
-        </Container>
+        <SignUp />
       </Box>
-    </>
+    </Box>
   );
 }

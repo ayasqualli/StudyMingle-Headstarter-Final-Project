@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Mali';
-  src: url('../fonts/Mali-Regular.ttf') format('truetype');
+  src: url('../fonts/Mali-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -131,10 +131,20 @@
   font-size: 1.2rem;
 }
 
+/*.mascotCard {
+  background-color: #FFE4B5;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 2s ease forwards, bounceIn 2s ease forwards;
+}*/
+
 .mascotImage {
   width: 600px;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 
