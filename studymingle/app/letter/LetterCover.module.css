@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Mali';
+    src: url('Mali-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.letterCoverContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFD27D; /* Pastel orange background */
+    text-align: center;
+    transition: opacity 1s ease-in-out; /* Fading effect when transitioning to landing page */
+  }
+  
+  .letter {
+    position: relative;
+    width: 600px; /* Large size */
+    height: 300px;
+    background-color: #FFE3B3; /* Light pastel yellow */
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease;
+    border: 3px solid #FFB74D; /* Cute contour */
+    perspective: 1000px;
+  }
+  
+  .triangularFlapTop, .triangularFlapBottom, .triangularFlapLeft, .triangularFlapRight {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #FFE3B3;
+    border-style: solid;
+    transition: transform 1s ease;
+    z-index: 2;
+  }
+  
+  .triangularFlapTop {
+    top: 0;
+    left: 50%;
+    transform-origin: top;
+    border-width: 0 300px 150px 300px;
+    border-color: transparent transparent #FFE3B3 transparent;
+  }
+  
+  .triangularFlapBottom {
+    bottom: 0;
+    left: 50%;
+    transform-origin: bottom;
+    border-width: 150px 300px 0 300px;
+    border-color: #FFE3B3 transparent transparent transparent;
+  }
+  
+  .triangularFlapLeft {
+    left: 0;
+    top: 50%;
+    transform-origin: left;
+    border-width: 150px 0 150px 300px;
+    border-color: transparent transparent transparent #FFE3B3;
+  }
+  
+  .triangularFlapRight {
+    right: 0;
+    top: 50%;
+    transform-origin: right;
+    border-width: 150px 300px 150px 0;
+    border-color: transparent #FFE3B3 transparent transparent;
+  }
+  
+  .opened .triangularFlapTop {
+    transform: rotateX(-180deg);
+  }
+  
+  .opened .triangularFlapBottom {
+    transform: rotateX(180deg);
+  }
+  
+  .opened .triangularFlapLeft {
+    transform: rotateY(-180deg);
+  }
+  
+  .opened .triangularFlapRight {
+    transform: rotateY(180deg);
+  }
+  
+  .seal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: #FFB74D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Add shadow for cuteness */
+  }
+  
+  .catMascot {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .title {
+    font-family: 'Mali', sans-serif;
+    font-size: 3.5rem;
+    color: #FF8A65;
+    margin-bottom: 30px;
+  }
+  
+  .clickText {
+    font-size: 1.5rem;
+    color: #BF360C;
+    margin-top: 30px;
+  }
+  
