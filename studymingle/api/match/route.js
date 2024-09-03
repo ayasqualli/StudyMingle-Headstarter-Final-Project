@@ -12,13 +12,11 @@ export async function POST(request) {
     // Create a unique room ID (e.g., using a combination of user IDs or a generated UUID)
     const roomId = `${user1Id}_${user2Id}`; // Adjust to your needs
 
-    // Create the room in Firebase
     const roomDocRef = doc(db, 'rooms', roomId);
     await setDoc(roomDocRef, {
         createdAt: new Date().toISOString(),
         participants: [user1Id, user2Id],
     });
 
-    // Return the room ID
     return NextResponse.json({ roomId }, { status: 201 });
 }
