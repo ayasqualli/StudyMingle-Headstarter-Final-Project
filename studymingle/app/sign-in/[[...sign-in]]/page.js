@@ -2,20 +2,25 @@
 
 import React from "react";
 import { Container, Box } from "@mui/material";
-import { SignIn, useAuth } from "@clerk/nextjs";
+import { SignIn, useAuth, useUser } from "@clerk/nextjs";
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function SignInPage() {
   const { isSignedIn } = useAuth();
   const router = useRouter();
+  const { user } = useUser();
 
   useEffect(() => {
-    console.log("isSignedIn:", isSignedIn);
-    if (isSignedIn === true) {
-      router.push('/dashboard'); // Redirect to the chat page after successful sign-in
+    if (user) {
+      // Check if onboarding is completed
+      if (user.publicMetadata.onboardingCompleted) {
+        router.push('/dashboard'); // Redirect to the dashboard if completed
+      } else {
+        router.push('/onboarding'); // Redirect to onboarding if not completed
+      }
     }
-  }, [isSignedIn, router]); // Only run when isSignedIn changes
+  }, [user, router]);
 
   return (
     <Box
