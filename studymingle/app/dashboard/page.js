@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client' // Client Component
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -113,7 +114,7 @@ const Dashboard = () => {
                     </div>
                     <div className={styles['menu-item']}>
                         <span className={styles.icon}>✉️</span>
-                        <span className={styles.text}>DM's</span>
+                        <span className={styles.text}>DM`&apos;`s</span>
                     </div>
                     <div className={styles['menu-item']}>
                         <span className={styles.icon}>🔔</span>

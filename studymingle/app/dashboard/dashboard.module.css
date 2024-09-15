@@ -175,10 +175,14 @@
   position: relative;
   width: 300px;
   height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
-  position: absolute;
+  position: relative; /* Change from absolute to relative */
+  margin-bottom: 20px; /* Add space between card and action bar */
   width: 300px;
   max-width: 85vw;
   height: 400px;
@@ -244,10 +248,10 @@
 }
 
 .action-bar {
-  position: absolute;
-  bottom: 200px;
-  left: 50px;
-  right: 0px;
+  position: relative; /* Change from absolute to relative */
+  bottom: auto; /* Remove absolute positioning */
+  left: auto;
+  right: auto;
   height: 60px;
   background-color: #fff;
   display: flex;
@@ -255,7 +259,8 @@
   align-items: center;
   border-radius: 30px;
   box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
-  width: 300px; /* Adjust this value to match your card width */
+  width: 100%; /* Make it full width of its container */
+  max-width: 300px; /* Limit maximum width */
   margin: 0 auto;
 }
 

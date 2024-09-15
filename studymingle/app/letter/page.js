@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client' // Client Component
 
 import React, { useState, useEffect } from "react";
