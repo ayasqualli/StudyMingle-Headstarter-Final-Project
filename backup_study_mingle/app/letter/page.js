@@ -15,7 +15,7 @@ export default function LetterCover() {
         // Fade out animation before navigating
         document.querySelector(`.${styles.letterCoverContainer}`).style.opacity = '0';
         setTimeout(() => {
-          router.push('/');
+          router.push('/home');
         }, 1000); // Wait for the fade-out animation
       }, 2000); // Adjust the timing for the flaps animation
     }
