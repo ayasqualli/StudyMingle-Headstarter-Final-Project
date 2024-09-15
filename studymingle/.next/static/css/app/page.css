@@ -1,0 +1,180 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+@keyframes page_gradientAnimation__fFHdo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes page_fadeIn__jjObi {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes page_bounceIn__d4_jB {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@font-face {
+  font-family: 'Mali';
+  src: url(/_next/static/media/Mali-Bold.7b3d982c.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page_container__jZF7q {
+  background: linear-gradient(270deg, #FFA500, #FFDAB9, #FFFACD);
+  background-size: 600% 600%;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  animation: page_gradientAnimation__fFHdo 15s ease infinite;
+}
+
+.page_header__oRW75 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  animation: page_fadeIn__jjObi 1s ease forwards;
+}
+
+.page_logo__ikIZE img {
+  width: 150px;
+  height: 150px;
+}
+
+.page_title__po7na {
+  font-family: 'Mali', sans-serif;
+  font-size: 3rem;
+  color: #FF6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  text-align: center;
+}
+
+.page_headerButtons__6sG9L {
+  display: flex;
+  gap: 15px;
+}
+
+.page_headerButtons__6sG9L button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page_headerButtons__6sG9L button:hover {
+  background-color: #FFA07A;
+  transform: scale(1.05);
+}
+
+.page_main__nw1Wk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  animation: page_fadeIn__jjObi 1.5s ease forwards;
+}
+
+.page_contentBox__Ck3P8 {
+  background-color: #FFE4B5;
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page_greeting__f9HkH {
+  font-size: 2.5rem;
+  color: #FF6347;
+  margin-bottom: 15px;
+}
+
+.page_tagline__FsEDs {
+  font-size: 1.6rem;
+  color: #8B4513;
+  margin-bottom: 25px;
+}
+
+.page_createAccountButton__9N2lG {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page_createAccountButton__9N2lG:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+.page_description__lvaOp {
+  margin-top: 25px;
+  color: #8B4513;
+  font-size: 1.2rem;
+}
+
+/*.mascotCard {
+  background-color: #FFE4B5;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 2s ease forwards, bounceIn 2s ease forwards;
+}*/
+
+.page_mascotImage__13ABh {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.page_footer__F3MD0 {
+  margin-top: 40px;
+  padding: 20px 0;
+  color: black;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  animation: page_fadeIn__jjObi 2.5s ease forwards;
+}
+
+.page_footerLinks__ZWbAq {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.page_footerLinks__ZWbAq a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.page_footerLinks__ZWbAq a:hover {
+  text-decoration: underline;
+}
+
