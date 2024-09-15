@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Mali';
-  src: url('../fonts/Mali-Bold.ttf') format('truetype');
+  src: url('./fonts/Mali-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
