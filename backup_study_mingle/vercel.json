@@ -1,9 +1,12 @@
 {
     "rewrites": [
       {
-        "source": "/(.*)",
+        "source": "/",
         "destination": "/letter"
+      },
+      {
+        "source": "/((?!letter).*)",
+        "destination": "/$1"
       }
     ]
   }
-  
