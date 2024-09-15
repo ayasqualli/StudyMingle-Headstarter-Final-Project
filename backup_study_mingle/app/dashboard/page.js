@@ -114,7 +114,7 @@ const Dashboard = () => {
                     </div>
                     <div className={styles['menu-item']}>
                         <span className={styles.icon}>✉️</span>
-                        <span className={styles.text}>DM`&apos;`s</span>
+                        <span className={styles.text}>DM`&#39;`s</span>
                     </div>
                     <div className={styles['menu-item']}>
                         <span className={styles.icon}>🔔</span>
