@@ -161,7 +161,7 @@ const OnboardingForm = () => {
             placeholder="What are your interests? Separate them by a comma"
             style={inputStyle}
           />
-          <button type="submit" style={buttonStyle}>
+          <button type="submit" style={buttonStyle} onClick={handleSubmit}>
             Submit
           </button>
         </form>
