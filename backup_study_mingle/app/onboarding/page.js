@@ -146,7 +146,7 @@ const OnboardingForm = () => {
           </label>
           <input
             name="subjects"
-            value={formData.location}
+            value={formData.subjects}
             onChange={handleChange}
             placeholder="What subjects do you study? Separate them by a comma"
             style={inputStyle}
@@ -155,8 +155,8 @@ const OnboardingForm = () => {
             Interests
           </label>
           <input
-            name="interrets"
-            value={formData.location}
+            name="interests"
+            value={formData.interests}
             onChange={handleChange}
             placeholder="What are your interests? Separate them by a comma"
             style={inputStyle}
